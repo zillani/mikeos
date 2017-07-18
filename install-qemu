@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#pre-requisites
+sudo apt-get install dh-autoreconf
+apt-get install libglib2.0-dev zlib1g-dev
+
+#Downlad and install
+wget http://download.qemu-project.org/qemu-2.9.0.tar.xz
+tar xvJf qemu-2.9.0.tar.xz
+cd qemu-2.9.0
+./configure
+make
